@@ -29,7 +29,7 @@ if(!is.null(k)){
 	message("retrieving cached data")
 	return(k)
 }
-mamat <- x$get()
+mat <- x$get()
 k <- solve(mat,...)
 x$setInverse(k)
 k
